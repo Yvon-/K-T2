@@ -10,13 +10,27 @@ import Foundation
 
 class LogOut{
     
-    var delegate: ViewController
+    var delegate: ViewController?
+    var time: Date?
     
-    init(delegate: ViewController){
+    init() {
+        
+    }
+    
+    convenience init(delegate: ViewController){
         self.delegate = delegate
     }
     
+    convenience init(time: Date){
+        self.time = time
+    }
+    
     func execute() {
-        delegate.showLogout()
+        if time!.timeIntervalSince1970 / 2 == 0 {
+            delegate?.showLogout()
+        } else {
+            print("Error")
+        }
+        
     }
 }

@@ -16,6 +16,9 @@
 		E9309BD023CF583100512C87 /* KarumiTest_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BCF23CF583100512C87 /* KarumiTest_2UITests.swift */; };
 		E9309BE123CF5C7E00512C87 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE023CF5C7E00512C87 /* LogIn.swift */; };
 		E9309BE323CF5C8800512C87 /* LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE223CF5C8800512C87 /* LogOut.swift */; };
+		E9309BE623CF682D00512C87 /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE523CF682D00512C87 /* TimeProvider.swift */; };
+		E9309BE923CF687200512C87 /* TimeProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE823CF687200512C87 /* TimeProviderMock.swift */; };
+		E9309BEB23CF6A9500512C87 /* LogOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BEA23CF6A9500512C87 /* LogOutTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		E9309BD123CF583100512C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9309BE023CF5C7E00512C87 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		E9309BE223CF5C8800512C87 /* LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOut.swift; sourceTree = "<group>"; };
+		E9309BE523CF682D00512C87 /* TimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProvider.swift; sourceTree = "<group>"; };
+		E9309BE823CF687200512C87 /* TimeProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProviderMock.swift; sourceTree = "<group>"; };
+		E9309BEA23CF6A9500512C87 /* LogOutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		E9309BAE23CF583000512C87 /* KarumiTest_2 */ = {
 			isa = PBXGroup;
 			children = (
+				E9309BE723CF685900512C87 /* Mocks */,
+				E9309BE423CF680900512C87 /* Providers */,
 				E9309BDF23CF5C6C00512C87 /* UseCases */,
 				E9309BAF23CF583000512C87 /* AppDelegate.swift */,
 				E9309BB123CF583000512C87 /* ViewController.swift */,
@@ -115,6 +123,7 @@
 		E9309BC323CF583100512C87 /* KarumiTest_2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E9309BEA23CF6A9500512C87 /* LogOutTests.swift */,
 				E9309BC423CF583100512C87 /* KarumiTest_2Tests.swift */,
 				E9309BC623CF583100512C87 /* Info.plist */,
 			);
@@ -137,6 +146,22 @@
 				E9309BE223CF5C8800512C87 /* LogOut.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		E9309BE423CF680900512C87 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				E9309BE523CF682D00512C87 /* TimeProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		E9309BE723CF685900512C87 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E9309BE823CF687200512C87 /* TimeProviderMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9309BB223CF583000512C87 /* ViewController.swift in Sources */,
+				E9309BE623CF682D00512C87 /* TimeProvider.swift in Sources */,
 				E9309BE323CF5C8800512C87 /* LogOut.swift in Sources */,
 				E9309BE123CF5C7E00512C87 /* LogIn.swift in Sources */,
 				E9309BB023CF583000512C87 /* AppDelegate.swift in Sources */,
+				E9309BE923CF687200512C87 /* TimeProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9309BC523CF583100512C87 /* KarumiTest_2Tests.swift in Sources */,
+				E9309BEB23CF6A9500512C87 /* LogOutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
