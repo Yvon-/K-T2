@@ -14,6 +14,8 @@
 		E9309BBA23CF583000512C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9309BB823CF583000512C87 /* LaunchScreen.storyboard */; };
 		E9309BC523CF583100512C87 /* KarumiTest_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BC423CF583100512C87 /* KarumiTest_2Tests.swift */; };
 		E9309BD023CF583100512C87 /* KarumiTest_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BCF23CF583100512C87 /* KarumiTest_2UITests.swift */; };
+		E9309BE123CF5C7E00512C87 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE023CF5C7E00512C87 /* LogIn.swift */; };
+		E9309BE323CF5C8800512C87 /* LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE223CF5C8800512C87 /* LogOut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E9309BCB23CF583100512C87 /* KarumiTest_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarumiTest_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9309BCF23CF583100512C87 /* KarumiTest_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarumiTest_2UITests.swift; sourceTree = "<group>"; };
 		E9309BD123CF583100512C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9309BE023CF5C7E00512C87 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		E9309BE223CF5C8800512C87 /* LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		E9309BAE23CF583000512C87 /* KarumiTest_2 */ = {
 			isa = PBXGroup;
 			children = (
+				E9309BDF23CF5C6C00512C87 /* UseCases */,
 				E9309BAF23CF583000512C87 /* AppDelegate.swift */,
 				E9309BB123CF583000512C87 /* ViewController.swift */,
 				E9309BB323CF583000512C87 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				E9309BD123CF583100512C87 /* Info.plist */,
 			);
 			path = KarumiTest_2UITests;
+			sourceTree = "<group>";
+		};
+		E9309BDF23CF5C6C00512C87 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				E9309BE023CF5C7E00512C87 /* LogIn.swift */,
+				E9309BE223CF5C8800512C87 /* LogOut.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9309BB223CF583000512C87 /* ViewController.swift in Sources */,
+				E9309BE323CF5C8800512C87 /* LogOut.swift in Sources */,
+				E9309BE123CF5C7E00512C87 /* LogIn.swift in Sources */,
 				E9309BB023CF583000512C87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
