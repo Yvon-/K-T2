@@ -19,6 +19,7 @@
 		E9309BE623CF682D00512C87 /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE523CF682D00512C87 /* TimeProvider.swift */; };
 		E9309BE923CF687200512C87 /* TimeProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BE823CF687200512C87 /* TimeProviderMock.swift */; };
 		E9309BEB23CF6A9500512C87 /* LogOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BEA23CF6A9500512C87 /* LogOutTests.swift */; };
+		E9309BEE23CF70FA00512C87 /* LoginLogoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9309BED23CF70FA00512C87 /* LoginLogoutPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E9309BE523CF682D00512C87 /* TimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProvider.swift; sourceTree = "<group>"; };
 		E9309BE823CF687200512C87 /* TimeProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProviderMock.swift; sourceTree = "<group>"; };
 		E9309BEA23CF6A9500512C87 /* LogOutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTests.swift; sourceTree = "<group>"; };
+		E9309BED23CF70FA00512C87 /* LoginLogoutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogoutPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +109,11 @@
 		E9309BAE23CF583000512C87 /* KarumiTest_2 */ = {
 			isa = PBXGroup;
 			children = (
+				E9309BEC23CF70CA00512C87 /* MVP */,
 				E9309BE723CF685900512C87 /* Mocks */,
 				E9309BE423CF680900512C87 /* Providers */,
 				E9309BDF23CF5C6C00512C87 /* UseCases */,
 				E9309BAF23CF583000512C87 /* AppDelegate.swift */,
-				E9309BB123CF583000512C87 /* ViewController.swift */,
-				E9309BB323CF583000512C87 /* Main.storyboard */,
 				E9309BB623CF583000512C87 /* Assets.xcassets */,
 				E9309BB823CF583000512C87 /* LaunchScreen.storyboard */,
 				E9309BBB23CF583000512C87 /* Info.plist */,
@@ -162,6 +163,16 @@
 				E9309BE823CF687200512C87 /* TimeProviderMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E9309BEC23CF70CA00512C87 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				E9309BB123CF583000512C87 /* ViewController.swift */,
+				E9309BB323CF583000512C87 /* Main.storyboard */,
+				E9309BED23CF70FA00512C87 /* LoginLogoutPresenter.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 			files = (
 				E9309BB223CF583000512C87 /* ViewController.swift in Sources */,
 				E9309BE623CF682D00512C87 /* TimeProvider.swift in Sources */,
+				E9309BEE23CF70FA00512C87 /* LoginLogoutPresenter.swift in Sources */,
 				E9309BE323CF5C8800512C87 /* LogOut.swift in Sources */,
 				E9309BE123CF5C7E00512C87 /* LogIn.swift in Sources */,
 				E9309BB023CF583000512C87 /* AppDelegate.swift in Sources */,

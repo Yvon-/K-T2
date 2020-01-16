@@ -11,13 +11,13 @@ import Foundation
 
 class LogIn{
     
-    var delegate: ViewController?
+    var delegate: LoginLogoutPresenter?
     
     init() {
         
     }
     
-    convenience init(delegate: ViewController){
+    convenience init(delegate: LoginLogoutPresenter){
         self.init()
         self.delegate = delegate
     }
@@ -25,7 +25,7 @@ class LogIn{
     func execute(name: String, passwd: String) {
         
         if name == "a" && passwd == "a" {
-             delegate!.showLogin()
+             delegate!.doLogin()
         } else {
             print("Login Error")
         }

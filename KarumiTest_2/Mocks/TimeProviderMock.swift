@@ -12,7 +12,7 @@ import Foundation
 class TimeProviderMock: TimeProvider {
     
     func now() -> Date {
-        <#code#>
+        return Date()
     }
     
     

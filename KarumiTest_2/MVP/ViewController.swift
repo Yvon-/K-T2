@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LoginLogoutView {
 
+    private var presenter: LoginLogoutPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("")
+        print()
+        presenter = LoginLogoutPresenter(loginUseCase: LogIn(delegate: presenter), logoutUseCase: LogOut(delegate: presenter), view: self)
+        
     }
 
     @IBOutlet weak var loginView: UIView!
@@ -22,13 +25,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var logout_btn: UIButton!
     
     @IBAction func login(_ sender: Any) {
-        LogIn(delegate: self).execute(name: user.text!, passwd: passwd.text!)
-        
+
+       self.presenter.onLoginButtonClick(name: user.text!, passwd: passwd.text!)
     }
     
     @IBAction func logout_btn(_ sender: Any) {
-        LogOut(delegate: self).execute()
+        
+        self.presenter.onLogoutButtonClick()
     }
+    
     
     public func showLogin() {
         loginView.isHidden = true
